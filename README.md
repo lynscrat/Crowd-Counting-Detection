@@ -23,7 +23,8 @@ Instead of detecting individuals directly, the model predicts a density map — 
 The total count is then obtained by summing over the density map’s pixel values.
 
 ### Methodology
-1. DDensity Map Generation
+1. Density Map Generation
+
 A Gaussian kernel was applied to each annotated head position in the dataset to generate the ground-truth density maps. The Gaussian kernel smooths each point, spreading the influence over neighboring pixels. This ensures that instead of binary head annotations (which are sparse), the model learns a continuous density distribution.
 
 2. Model Architectures
